@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>assets/lena.png</file>
+        <file>assets/carmera.png</file>
+        <file>assets/picture.png</file>
+        <file>assets/ai.png</file>
+        <file>assets/ManjaroMix.qss</file>
+        <file>assets/nanodet.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
