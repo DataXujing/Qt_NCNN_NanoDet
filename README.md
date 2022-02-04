@@ -51,6 +51,15 @@
 
 #### #2.QT OpenCV Android环境配置
 
+我们尝试了opencv-android-sdk的不同版本，发现在qt5.14.2下opencv-4.1.0-android-sdk是可以正常工作的，因此我们最终选择opencv-android-sdk
+
++ 解压opencv-4.1.0-android-sdk.zip
++ 打开QtCreater按照如下步骤配置opencv的编译环境
+
+![](./docs/2022-02-04_120855.png)
+
+![](./docs/2022-02-04_121504.png)
+
 
 :zap: 为什么没有选择 opencv-mobile ?
 
