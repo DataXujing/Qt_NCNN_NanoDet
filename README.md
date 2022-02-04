@@ -14,41 +14,54 @@
 + 手摸手从零开始的环境搭建，干净又卫生
 
 
-------
-
-#TODO
-
 ### 2.环境搭建
 
-+ 1.QT
-
-+ JDK
-
-+ android NDK
-
-+ android JDK
-
-+ opencv android
-
-
-+ ncnn vs2019编译
-
-+ ncnn 安卓编译
-
-
++ 1.QT: qt 5.14.2
++ 2.JDK: jdk8
++ 3.Android NDK: android-ndk r21
++ 4.Android JDK
++ 5.Opencv Android:opencv-4.1.0-android-sdk
++ 6.NCNN: ncnn-20211208-full-source.zip
 
 
 ### 3. QT编译环境配置
 
-+ QT android环境配置
+#### #1.QT Android环境配置
 
-+ 为什么选择QT5.12.4和NDK21
+该部分我们参考了B站教程：<https://www.bilibili.com/video/BV1tK41157F6?from=search&seid=15718933040668577581&spm_id_from=333.337.0.0>.
+
++ 下载section 1中的环境
++ 安装JDK8
++ 解压android-ndk r21
++ 解压android-jdk
++ 按照如下图配置QT
+
+![](./docs/2022-02-04_105740.png)
 
 
-+ QT + Opencv Android环境配置
+!> 为什么选择qt5.14.2和android-ndk r21 ?
+
+为了方便和NCNN结合，在使用NCNN时发现
+
+1. 用较低版本NDK编译失败，亲测用r15c可以，如果需要vulkan，需要ndk18以上，但是18以上不支持gcc了，默认clang
+2. 较低版本Qt用gcc，高版本用clang，因此高版本应当可以直接用官方公布的最新的编译好的库，用不了的话再自己编译
+
+因此我们选择了qt5.14.2和android-ndk r21.
 
 
-+ 为什么没有选择 opencv-mobile
+#### #2.QT OpenCV Android环境配置
+
+
+!> 为什么没有选择 opencv-mobile ?
+
+
+#### #3.NCNN vs2019编译
+
+
+#### #4.NCNN Android编译
+
+
+!> 为什么要选择重新编译ncnn ?
 
 
 ### 4. 你以为这样就OK了吗？
@@ -59,7 +72,6 @@
 
 + 问题3：libomp.so的问题
 
-+ 问题4： ...
 
 
 ### 5.关于代码部分的一些说明
@@ -79,7 +91,7 @@
 
 + 知乎大佬多ncnn的总结
 
-+ ncnn的官方repo
++ ncnn的官方repo: <https://github.com/Tencent/ncnn>
 
 + ncnn的模型仓库
 
@@ -90,7 +102,7 @@
 + QT+ncnn的配置
 
 
-+ QT安卓环境配置
++ QT安卓环境配置:<https://www.bilibili.com/video/BV1tK41157F6?from=search&seid=15718933040668577581&spm_id_from=333.337.0.0>
 
 + QT opencv环境配置
 
@@ -112,21 +124,17 @@
 
 + 打开相册进行识别
 
+![](./docs/Screenshot_2022-02-04-01-13-52-097_org.qtproject.example.png)
+
 
 + 打开摄像头进行识别
+
+![](./docs/Screenshot_2022-02-04-01-15-22-439_org.qtproject.example.png)
 
 
 ### 8. APK下载
 
-
-### 9.最后想说点什么
-
-
-+ 关于ncnn
-
-+ 关于QT
-
-+ 一个AI图像算法工程师为什么要折腾这个？
+:bug: [APK-Download](https://github.com/DataXujing/Qt_NCNN_NanoDet/releases/download/untagged-72f6072efe822df13658/nanodet-ncnn-release.apk)
 
 
 
