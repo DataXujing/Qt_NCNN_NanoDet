@@ -39,7 +39,7 @@
 ![](./docs/2022-02-04_105740.png)
 
 
-!> 为什么选择qt5.14.2和android-ndk r21 ?
+:zap: 为什么选择qt5.14.2和android-ndk r21 ?
 
 为了方便和NCNN结合，在使用NCNN时发现
 
@@ -52,7 +52,8 @@
 #### #2.QT OpenCV Android环境配置
 
 
-!> 为什么没有选择 opencv-mobile ?
+:zap: 为什么没有选择 opencv-mobile ?
+
 
 
 #### #3.NCNN vs2019编译
